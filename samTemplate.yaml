@@ -25,6 +25,9 @@ Resources:
           Properties:
             Path: /
             Method: get
+            RequestParameters:
+             - method.request.querystring.method:
+                Required: true         
         PostEvent:
           Type: Api
           Properties:
