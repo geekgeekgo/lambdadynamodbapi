@@ -11,6 +11,10 @@ Resources:
       Description: 'Lambda function for DynamoDB'
       MemorySize: 128
       Timeout: 30
+      Environment:
+        Variables:
+          table: ORG_DTL
+          rej_table: ORG_DTL_REJ
       FunctionName: 'APIDynamoDB'
       Policies: 
       - AWSLambdaExecute
